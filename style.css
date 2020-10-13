@@ -1,0 +1,39 @@
+.gb {
+    border:3px solid black;
+    border-radius: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.spad {
+    padding:5%;
+}
+
+.black {
+    background-color: black;
+    border:1px solid black;
+}
+
+input[type=text] {
+    border:2px solid black;
+}
+
+input[type=text]:focus {
+    border: 2px solid black;
+    box-shadow: none;
+}
+
+button:hover {
+    background-color: white;
+    color:black;
+}
+
+.hide {
+    display: none;
+}
+
+select:onchange {
+    border:2px solid black;
+}

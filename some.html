@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <diV class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <form action="" class="form-group" onsubmit="consolePrint();return false;">
+                    <div>
+                        <label for="ProductName">Product Name</label>
+                        <input class="form-control" type="text" name="ProductName" id="pname">
+                    </div>
+                    <div>
+                        <label for="BasePrice">Base Price</label>
+                        <input class="input form-control" type="text" name="BasePrice" id="price">
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <input class="form-control" type="text" name="description" id="des">
+                    </div>
+                    <br>
+                    <div>
+                        <input class="btn btn-primary" type="button" onclick="addvarient()" id="addvar"
+                            value="Add Varient">
+                    </div>
+                    <div id='varients' style="display: none;">
+                        <input class="btn btn-primary" type="button" onclick="createVarDetails()" value="done"
+                            id='donevar'>
+                    </div>
+                    <div id='varientdetails'></div>
+
+                    <br>
+                    <input type="submit" value="display in console" id='submitbtn'>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+    </diV>
+    <script src='main.js'></script>
+</body>
+
+</html>
